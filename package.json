@@ -1,0 +1,23 @@
+{
+  "name": "viratdigipress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "echo \"Hello from sass\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpmaheshbabu/viratdigipress.git"
+  },
+  "author": "MP Mahesh Babu",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/mpmaheshbabu/viratdigipress/issues"
+  },
+  "homepage": "https://github.com/mpmaheshbabu/viratdigipress#README",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.11.0"
+  }
+}
