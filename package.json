@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "echo \"Hello from sass\" "
+    "build-css": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "repository": {
     "type": "git",
