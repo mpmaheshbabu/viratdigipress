@@ -2,7 +2,7 @@
   "name": "viratdigipress",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "home.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,12 +18,16 @@
   "homepage": "https://github.com/mpmaheshbabu/viratdigipress#README",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gsap": "^2.1.2",
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0",
-    "popper.js": "^1.14.7"
+    "popper.js": "^1.14.7",
+    "scrollmagic": "^2.0.6",
+    "tilt.js": "^1.2.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
+    "font-awesome": "^4.7.0",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2"
   }

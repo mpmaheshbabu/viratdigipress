@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        height="12.168945"
+        width="88.418457"
+        id="svg15"
+        version="1.1"
+        viewbox="0 0 100 20">
+    <metadata
+            id="metadata19">
+        <rdf:RDF>
+            <cc:Work
+                    rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                        rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs
+            id="defs9">
+        <style xmlns="http://www.w3.org/2000/svg" type="text/css">
+            @import url('//db.onlinewebfonts.com/c/482de819aa9631d27141f3d998cace18?family=Ethnocentric');
+            text {
+            font-size: 17;
+            font-family: 'Ethnocentric';
+            }
+        </style>
+
+        <pattern
+                patternTransform="translate(-25.620605,-2.8310547)"
+                id="pattern21"
+                xlink:href="#wave" />
+        <linearGradient
+                y2="1"
+                y1="0"
+                x2="0"
+                x1="0"
+                id="gradient">
+            <stop
+                    id="stop2"
+                    stop-color="#2962ff"
+                    offset="35%" />
+            <stop
+                    id="stop4"
+                    stop-color="#0039cb"
+                    offset="65%" />
+        </linearGradient>
+        <pattern
+                patternUnits="userSpaceOnUse"
+                height="20"
+                width="120"
+                y="0"
+                x="0"
+                id="wave">
+            <path
+                    fill="url(#gradient)"
+                    d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+                    id="wavePath">
+                <animateTransform
+                        repeatCount="indefinite"
+                        to="40,0"
+                        from="0,0"
+                        dur="1.5s"
+                        begin="0s"
+                        type="translate"
+                        attributeName="transform" />
+            </path>
+        </pattern>
+        <linearGradient
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="matrix(1.9947065,0,0,0.50132689,-25.620605,-2.8310547)"
+                y2="29.920598"
+                x2="12.844298"
+                y1="5.6471232"
+                x1="12.844298"
+                id="linearGradient23"
+                xlink:href="#gradient" />
+    </defs>
+    <text
+            style="font-size:17px;text-anchor:middle;fill:url(#pattern21);fill-opacity:1"
+            id="text11"
+            y="12.168945"
+            x="38.9">VIRAT</text>
+    <text
+            style="font-size:17px;text-anchor:middle;fill:url(#linearGradient23);fill-opacity:0.6"
+            id="text13"
+            y="12.168945"
+            x="38.9">VIRAT</text>
+</svg>
