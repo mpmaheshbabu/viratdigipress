@@ -1,9 +1,11 @@
 $('document').ready(() => {
+
+    $("body").niceScroll({cursorcolor:"#2962ff"});
     var html = document.documentElement;
     var body = document.body;
     var scroller = {
         target: document.querySelector("#root"),
-        ease: 0.05, // <= scroll speed
+        ease: 0.06, // <= scroll speed
         endY: 0,
         y: 0,
         resizeRequest: 1,
@@ -87,8 +89,8 @@ window.onload = function(){
         var title = $(sectionTitle).find('h1'),
             text = $(sectionTitle).find('p'),
             button = $(sectionTitle).find('a');
-        var tl = new TimelineMax({pause: true});
-        tl.add("start") // add timeline label
+        var tweenText = new TimelineMax({pause: true});
+        tweenText.add("start") // add timeline label
             .fromTo(title, 0.6, { y: '40px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
             .fromTo(text, 0.6, { y: '60px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
             .fromTo(button, 0.6, { y: '100px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start");
@@ -96,24 +98,24 @@ window.onload = function(){
         var sectionTitleScene = new ScrollMagic.Scene({
             triggerElement: sectionTitle,
             triggerHook: 0.8,
-            offset: -95 /* offset the trigger Npx below scene's top */
+            offset: 80 /* offset the trigger Npx below scene's top */
+        })
+            .setTween(tweenText)
+            .addTo(controller);
+    });
+
+    $(".parallax-text-container").each(function() {
+        var tl = new TimelineMax();
+        var child = $(this).find(".parallax-text");
+        tl.to(child, 1, { y: -80, ease: Linear.easeNone });
+
+        var scene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 1,
+            duration: "100%"
         })
             .setTween(tl)
             .addTo(controller);
-        // Add debug indicators fixed on right side
-        /*sectionTitleScene.addIndicators();*/
     });
-
-    /*var sectionImages = ["#section01 .section-img"];
-    sectionImages.forEach(function (sectionIamge, index) {
-        var num = index+1;
-        var sectionImageScene = new ScrollMagic.Scene({
-            triggerElement: '#section0'+num,
-            triggerHook: 1,
-            duration: '100%'
-        })
-            .setTween(TweenMax.from('#section0'+num+' .section-img', 1, {y:'200%', ease:Power0.easeNone}))
-            .addTo(controller);
-    });*/
 
 };

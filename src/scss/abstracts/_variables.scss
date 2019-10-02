@@ -7,4 +7,10 @@ $secondaryDarkColor: #c43c00;
 $primaryTextColor: #ffffff;
 $secondaryTextColor: #000000;
 
+// Your variable overrides
+$primary: $primaryColor;
+
+// Bootstrap and its default variables
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
 $fa-font-path:   "../assets/fonts/font-awesome/";

@@ -31,15 +31,19 @@ nav.navbar div.container a object {
   pointer-events: none;
 }
 
+i {
+  vertical-align: middle;
+}
+
 a {
-  i.fa-arrow-right {
+  i.animate-right {
     margin-left: 12px;
     transition: margin-left 0.2s ease-in-out;
   }
 }
 
 a:hover {
-  i.fa-arrow-right {
+  i.animate-right {
     margin-left: 16px;
   }
 }
@@ -51,4 +55,9 @@ a:hover {
     position: absolute;
     transform: translateZ(50px);
   }
+}
+
+.parallax-text {
+  position: relative;
+  top: 40px;
 }
